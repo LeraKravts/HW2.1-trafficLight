@@ -15,37 +15,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var green: UIView!
     @IBOutlet weak var button: UIButton!
     
+    let faded:CGFloat = 0.3
+    let brigth:CGFloat = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         red.layer.cornerRadius = 127
         yellow.layer.cornerRadius = 127
         green.layer.cornerRadius = 127
         
-        red.alpha = 0.3
-        yellow.alpha = 0.3
-        green.alpha = 0.3
+        
+        red.alpha = faded
+        yellow.alpha = faded
+        green.alpha = faded
     }
  
     @IBAction func buttonStart() {
-        if red.alpha == 0.3 && yellow.alpha == 0.3 && green.alpha == 0.3 {
+        if red.alpha == faded && yellow.alpha == faded && green.alpha == faded {
             button.setTitle("NEXT", for:.normal)
-            red.alpha = 1
+            red.alpha = brigth
     }
-        else if red.alpha == 1 {
-            red.alpha = 0.3
-            yellow.alpha = 1
+        else if red.alpha == brigth {
+            red.alpha = faded
+            yellow.alpha = brigth
             button.setTitle("NEXT", for:.normal)
         }
         
-        else if yellow.alpha == 1 {
-            yellow.alpha = 0.3
-            green.alpha = 1
+        else if yellow.alpha == brigth {
+            yellow.alpha = faded
+            green.alpha = brigth
             button.setTitle("NEXT", for:.normal)
             
         } else {
-            green.alpha = 0.3
-            yellow.alpha = 0.3
-            red.alpha = 1
+            green.alpha = faded
+            yellow.alpha = faded
+            red.alpha = brigth
             button.setTitle("NEXT", for:.normal)
         }
     }
