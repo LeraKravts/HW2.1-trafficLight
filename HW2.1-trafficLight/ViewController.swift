@@ -27,12 +27,27 @@ class ViewController: UIViewController {
     }
  
     @IBAction func buttonStart() {
-        red.alpha = 1
-        button.setTitle("NEXT", for:.normal)
-        
+        if red.alpha == 0.3 && yellow.alpha == 0.3 && green.alpha == 0.3 {
+            button.setTitle("NEXT", for:.normal)
+            red.alpha = 1
     }
-    
-    
-   
+        if red.alpha == 1 {
+            red.alpha = 0.3
+            yellow.alpha = 1
+            button.setTitle("NEXT", for:.normal)
+        }
+        
+        if yellow.alpha == 1 {
+            yellow.alpha = 0.3
+            green.alpha = 1
+            button.setTitle("NEXT", for:.normal)
+            
+        } else {
+            green.alpha = 0.3
+            yellow.alpha = 0.3
+            red.alpha = 1
+            button.setTitle("NEXT", for:.normal)
+        }
+  }
 }
 
