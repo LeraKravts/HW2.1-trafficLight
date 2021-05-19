@@ -63,6 +63,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button" destination="1Wd-23-E49" id="MOz-YK-56g"/>
                         <outlet property="green" destination="MdS-h1-vmJ" id="Lxh-3d-2MJ"/>
                         <outlet property="red" destination="opH-Wc-2Im" id="X1l-PJ-QnU"/>
                         <outlet property="yellow" destination="hX0-gN-cpH" id="h6O-ju-lsO"/>

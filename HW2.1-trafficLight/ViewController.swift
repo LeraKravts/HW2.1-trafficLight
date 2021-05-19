@@ -13,10 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var yellow: UIView!
     
     @IBOutlet weak var green: UIView!
- 
-    @IBAction func buttonStart() {
-    }
-    
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +25,14 @@ class ViewController: UIViewController {
         yellow.alpha = 0.3
         green.alpha = 0.3
     }
+ 
+    @IBAction func buttonStart() {
+        red.alpha = 1
+        button.setTitle("NEXT", for:.normal)
+        
+    }
+    
+    
+   
 }
 
