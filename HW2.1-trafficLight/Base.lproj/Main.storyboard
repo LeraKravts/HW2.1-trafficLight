@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -15,34 +15,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_1_trafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="npW-3I-n16">
-                                <rect key="frame" x="80" y="74" width="254" height="708"/>
+                                <rect key="frame" x="80" y="74" width="268" height="738"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opH-Wc-2Im">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="229.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="239.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hX0-gN-cpH">
-                                        <rect key="frame" x="0.0" y="239.33333333333331" width="254" height="229.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="249.33333333333331" width="268" height="239.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdS-h1-vmJ">
-                                        <rect key="frame" x="0.0" y="478.66666666666657" width="254" height="229.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="498.66666666666657" width="268" height="239.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9r-Bp-bGC">
-                                <rect key="frame" x="10" y="822" width="394" height="30"/>
+                                <rect key="frame" x="10" y="843" width="408" height="39"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <size key="titleShadowOffset" width="100" height="20"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="S T A R T">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
