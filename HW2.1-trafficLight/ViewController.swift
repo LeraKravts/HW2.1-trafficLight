@@ -8,12 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var red: UIView!
+    @IBOutlet weak var yellow: UIView!
+    
+    @IBOutlet weak var green: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        red.layer.cornerRadius = 127
+        yellow.layer.cornerRadius = 127
+        green.layer.cornerRadius = 127
     }
-
+    
+    
+    
 
 }
 
