@@ -31,13 +31,13 @@ class ViewController: UIViewController {
             button.setTitle("NEXT", for:.normal)
             red.alpha = 1
     }
-        if red.alpha == 1 {
+        else if red.alpha == 1 {
             red.alpha = 0.3
             yellow.alpha = 1
             button.setTitle("NEXT", for:.normal)
         }
         
-        if yellow.alpha == 1 {
+        else if yellow.alpha == 1 {
             yellow.alpha = 0.3
             green.alpha = 1
             button.setTitle("NEXT", for:.normal)
@@ -48,6 +48,6 @@ class ViewController: UIViewController {
             red.alpha = 1
             button.setTitle("NEXT", for:.normal)
         }
-  }
+    }
 }
 
