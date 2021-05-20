@@ -31,27 +31,49 @@ class ViewController: UIViewController {
     }
  
     @IBAction func buttonStart() {
-        if red.alpha == faded && yellow.alpha == faded && green.alpha == faded {
-            button.setTitle("NEXT", for:.normal)
-            red.alpha = brigth
-    }
-        else if red.alpha == brigth {
-            red.alpha = faded
+
+        switch brigth {
+        case red.alpha:
             yellow.alpha = brigth
-            button.setTitle("NEXT", for:.normal)
-        }
-        
-        else if yellow.alpha == brigth {
-            yellow.alpha = faded
+            green.alpha = faded
+            red.alpha = faded
+        case yellow.alpha:
+            red.alpha = faded
             green.alpha = brigth
-            button.setTitle("NEXT", for:.normal)
-            
-        } else {
+            yellow.alpha = faded
+        case green.alpha:
+            red.alpha = brigth
             green.alpha = faded
             yellow.alpha = faded
+            
+        default:
             red.alpha = brigth
-            button.setTitle("NEXT", for:.normal)
+            button.setTitle("NEXT", for: .normal)
         }
+        
+//        without switch
+        
+//        if red.alpha == faded && yellow.alpha == faded && green.alpha == faded {
+//            button.setTitle("NEXT", for:.normal)
+//            red.alpha = brigth
+//    }
+//        else if red.alpha == brigth {
+//            red.alpha = faded
+//            yellow.alpha = brigth
+//            button.setTitle("NEXT", for:.normal)
+//        }
+//
+//        else if yellow.alpha == brigth {
+//            yellow.alpha = faded
+//            green.alpha = brigth
+//            button.setTitle("NEXT", for:.normal)
+//
+//        } else {
+//            green.alpha = faded
+//            yellow.alpha = faded
+//            red.alpha = brigth
+//            button.setTitle("NEXT", for:.normal)
+//        }
     }
 }
 
